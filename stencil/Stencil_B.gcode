@@ -1,0 +1,55 @@
+G21 (All units in mm)
+
+G21 (All units in mm: TODO, make this dynamic)
+
+G92 X0 Y0 Z0 (set pos to zero)
+
+M05 S0 (laser off)
+
+( BORDER )
+
+( n=3 d=33.0 )
+G00 X60.025 Y0.025
+M03 S20
+G01 X12.025 Y0.025 F200
+M05 S0
+
+( n=1 d=6.0 )
+G00 X12.025 Y39.525
+M03 S20
+G01 X0.025 Y39.525 F200
+M05 S0
+
+( n=0 d=0.0 )
+G00 X0.025 Y39.525
+M03 S20
+G01 X0.025 Y50.025 F200
+M05 S0
+
+( n=0 d=22.5 )
+G00 X12.025 Y39.525
+M03 S20
+G01 X12.025 Y0.025 F200
+M05 S0
+
+( n=1 d=18.0 )
+G00 X0.025 Y50.025
+M03 S20
+G01 X60.025 Y50.025 F200
+M05 S0
+
+( n=0 d=0.0 )
+G00 X60.025 Y50.025
+M03 S20
+G01 X60.025 Y0.025 F200
+M05 S0
+
+
+
+( FOOTPRINTS )
+
+
+
+(Footer)
+M05 S0 (laser off)
+G00 x0 y0
